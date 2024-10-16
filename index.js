@@ -23,7 +23,7 @@ app.post("/formdata",(req,res)=>{
         res.status(400).json({"message": "Password must be at least 5 characters long."})
     }
 
-    res.status(400).json({"message": "Credentials are valid"})
+    res.status(200).json({"message": "Credentials are valid"})
 });
 
 const port = process.env.PORT || 3000;
